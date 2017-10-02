@@ -26,7 +26,7 @@ done
 /usr/bin/task $@
 cd $DATA_DIR
 git add .
-git commit -m "$TASK_COMMAND" > /dev/null
+git commit -m "$TASK_COMMAND"
 
 if [ "$PUSH" == 1 ]; then
   git push origin master > /dev/null
